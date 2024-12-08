@@ -47,13 +47,13 @@ io.on('connection', (socket) => {
     socket.emit('message', 'Hello from server!');
 });
 app.get('/', (req, res) => {
-  res.send('Socket.IO Server is up and running!');
+  res.send('Socket.IO Server is up and runningggggggggg!');
 });
 
 app.route("/users").get((req, res, next)=>{
   res.status(200).json({
-    users: ["umar amjad"],
-    success:  true,
+    users: [],
+    success:  false,
   });
 })
 
